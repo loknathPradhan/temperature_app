@@ -1,38 +1,110 @@
+body {
+  margin: 0;
+  color: whitesmoke;
+  background: -webkit-linear-gradient(left, #397cf1, #21068b);
+}
+
 .App {
-  text-align: center;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loc {
+  font-size: 3em;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont {
+  font-size: large;
+}
+
+.weather {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+
 }
 
-.App-link {
-  color: #61dafb;
+.temp>h1 {
+  font-size: 7em;
+  font-weight: 100;
+  margin: 0;
+  display: flex;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.degree {
+  font-size: 0.5em;
+}
+
+.temp {
+  margin-left: 5px;
+}
+.temp>p {
+  margin: 0;
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.box {
+  padding: 0 40px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.233);
+
+}
+
+.box>h2 {
+  text-align: center;
+  /* display: flex; */
+  margin-bottom: 0px;
+}
+
+.favPlace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.favPlace>h2 {
+  margin: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.233);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.temp_des {
+  font-size: xx-large;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .weather {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+
+  }
+
+  .input {
+    margin-left: 100px;
   }
 }

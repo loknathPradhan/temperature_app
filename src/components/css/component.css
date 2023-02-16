@@ -1,0 +1,26 @@
+.inputfield {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    padding-top: 11px;
+    border: none;
+    /* background-color: whitesmoke; */
+}
+.btn {
+    background-color: rgba(198, 189, 241, 0.275);
+    padding: 10px;
+    border: none;
+    border-radius:0 10px 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+   
+    .input {
+      margin-right: 150px;
+    }
+  }
